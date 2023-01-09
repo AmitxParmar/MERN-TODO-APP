@@ -12,7 +12,7 @@ module.export = async () => {
             process.env.MONGO_URL,
             connectionParams
         );
-        console.log('Connected to MongoDB');)
+        console.log('Connected to MongoDB');
     } catch (err) {
         console.log("Couldn't connect to MongoDB", err);
     }
