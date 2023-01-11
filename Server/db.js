@@ -9,7 +9,8 @@ module.export = async () => {
             useUnifiedTopology: true
         };
         await mongoose.connect(//address here mongo
-            process.env.MONGO_URL,
+            "mongodb://localhost:27017/to-do",
+            //process.env.MONGO_URL,
             connectionParams
         );
         console.log('Connected to MongoDB');

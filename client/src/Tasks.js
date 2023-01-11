@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { addTask, deleteTask, getTasks, updateTask } from './services/taskServices';
 
-const Task = async () => {
+const Tasks = async () => {
 
     const [currentTask, setCurrentTask] = useState("");
     const [tasks, setTasks] = useState([]);
@@ -57,4 +57,4 @@ const Task = async () => {
     );
 };
 
-export default Task;
+export default Tasks;
