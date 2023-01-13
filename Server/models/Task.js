@@ -12,4 +12,5 @@ const taskSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model("task", taskSchema);
+const Todo = mongoose.model("task", taskSchema);
+module.exports = Todo;
