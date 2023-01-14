@@ -7,4 +7,7 @@ Content-Type: application/json
     "text": "Test after closing MongoDB apps"
 }
 ###
-DELETE http://localhost:8080/todo/delete/63c2ee290b9fa9353b369ba3
+DELETE http://localhost:8080/todo/delete/
+
+###
+PUT http://localhost:8080/todo/complete/63c2ef090b9fa9353b369ba6
