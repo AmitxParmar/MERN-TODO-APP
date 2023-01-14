@@ -1,40 +1,91 @@
+:root {
+    --primary: #D81E5B;
+    --secondary: #8A4EFC;
+    --light: #EEE;
+    --light-alt: #61759b;
+    --dark: #131A26;
+    --dark-alt: #202B3E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+body {
+    background-color: var(--dark-alt);
+    color: var(--light);
+}
+
 .App {
-
-    width: 100vw;
-    height: 100vh;
-    background: #f5f5f5;
+    padding: 32px;
 }
 
-.heading {
-    font-size: 20px;
-    font-weight: bold;
-
-    text-align: center;
+h1 {
+    font-size: 40px;
 }
 
-.flex {
+h4 {
+    font-size: 18px;
+    color: var(--light-alt);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.todo {
+    position: realative;
+    background: var(--dark);
+    padding: 16px;
+    border-radius: 16px;
     display: flex;
-    justify-content: center;
-
     align-items: center;
-}
-
-.container {
-    width: 500px;
-    min-height: 300px;
-    padding: 10px;
-}
-
-.task-container {
-    margin: 10px 0;
+    transition: 0.5s;
     cursor: pointer;
+    margin-bottom: 16px;
 }
 
-.task {
-    flex-grow: 1;
-    margin-left: 10px;
+.todo:hover {
+    opacity: 0.8;
 }
 
-.line_through {
+.todo .checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    border-radius: 999px;
+    background-color: var(--dark-alt);
+    transition: 0.4s;
+}
+
+.todo.is-complete .checkbox {
+    background-color: var(--primary);
+    background-image: linear-gradient(to bottom, var(--primary), var(--secondary));
+}
+
+.todo .text {
+    font-size: 20px;
+}
+
+.todo.is-complete .text {
     text-decoration: line-through;
+}
+
+.todo .delete-todo {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translate(-50%);
+
+    width: 24px;
+    height: 24px;
+    color: var(--light);
+    background-color: #AF1E2D;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
