@@ -1,0 +1,8 @@
+GET http://localhost:8080/todos
+###
+POST http://localhost:8080/todo/new
+Content-Type: application/json
+
+{
+    "text": "Test: add TODO by Me third time"
+}

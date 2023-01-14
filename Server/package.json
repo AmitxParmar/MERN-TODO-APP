@@ -4,7 +4,7 @@
   "description": "todo-app backend for a full stack project",
   "main": "index.js",
   "license": "MIT",
-  "scripts":{
+  "scripts": {
     "start": "nodemon index.js"
   },
   "dependencies": {
