@@ -4,5 +4,7 @@ POST http://localhost:8080/todo/new
 Content-Type: application/json
 
 {
-    "text": "Test: add TODO by Me third time"
+    "text": "Test after closing MongoDB apps"
 }
+###
+DELETE http://localhost:8080/todo/delete/63c2ee290b9fa9353b369ba3
